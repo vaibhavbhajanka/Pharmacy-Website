@@ -1,0 +1,240 @@
+.site-heading{
+    display: inline-block;
+    font-size: 50px;
+    margin: 0%;
+    padding-left: 200px;
+}
+
+body {
+    font-family: Helvetica;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  .site-header { 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+  }
+  
+  .site-header::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .site-identity {
+    float: left;
+  }
+  
+  .site-identity h1 {
+    font-size: 70px;
+    margin: .7em 0 .3em 0;
+    display: inline-block;
+    padding-left: 450px;
+  }
+  
+  .site-identity img {
+    max-width: 120px;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+  
+  nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+.first{
+    font-size: 30px;
+    padding-left: 170px;
+}
+.second{
+    font-size: 60px;
+    padding-left: 170px;
+}
+.welcome{
+    color: white;
+}
+.Info{
+    color: white;
+}
+.sec1{
+    border-spacing: 50px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  /* Set a background color */
+  body {
+    /* background-color: #474e5d; */
+    font-family: Helvetica, sans-serif;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    flex: 4;
+    position: relative;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #41B4A7;
+    top: 0;
+    bottom: 0;
+    left: 43%;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 40%;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 35%;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 0%;
+  }
+
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: #41B4A7;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+
+    h2{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+
+    footer {
+        background-color: #333;
+        overflow: hidden;
+    }
+    
+    footer a {
+        text-decoration: none;
+        padding: 20px;
+        text-align: center;
+        float: left;
+        color: white;
+    }
+
+    .img{
+        position: relative;
+        max-width: 300px;
+    }
+
+    .main-content {
+        display: flex;
+        padding: .5em 1em;
+      }
+    
+      .service{
+          font-size: 20px;
+          text-align: left;
+      }
+
+      .desc{
+          text-align: left;
+      }
+
+      .sec2{
+          flex: 5;
+          padding: 100px 40px;
+      }
+
+      .img2{
+          /* width: 33%; */
+          height: 300px;
+          filter: grayscale(60%);
+          padding: 10px;
+      }
+
+      .about{
+          position: relative;
+          /* flex: 1; */
+          /* display: inline-block; */
+      }
+      
+      /* Bottom right text */
+      .centered {
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .serv{
+          display: flex;
+          justify-content: space-evenly;
+      }
+
+      .prod{
+          display: flex;
+          justify-content: space-evenly;
+      }
+
+      .contact{
+          align-content: center;
+      }
+
+      .styled-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .styled-table td {
+        padding: 18px 21px;
+    }
+
+    .styled-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    .styled-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    .styled-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
