@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 .site-heading{
     display: inline-block;
     font-size: 50px;
@@ -238,3 +240,152 @@ nav a {
     .styled-table tbody tr:last-of-type {
         border-bottom: 2px solid #009879;
     }
+
+/* --- quick landing tweaks --- */
+:root{
+    --brand-main:#41B4A7;
+    --brand-dark:#0E6057;
+    --brand-light:#f9f9f9;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:var(--brand-dark);
+}
+
+nav a{
+    color:white;
+}
+
+.site-identity h1{
+    font-size:40px;
+    padding-left:0;
+}
+
+.welcome{
+    background-image:url('images/mediking_shop.jpeg');
+    background-size:cover;
+    background-position:center;
+    height:70vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    color:white;
+}
+
+.welcome::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.welcome-content{
+    position:relative;
+    z-index:1;
+    padding-left:170px;
+}
+
+.cta{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 28px;
+    background:var(--brand-main);
+    color:#fff;
+    border-radius:4px;
+    font-weight:600;
+}
+
+.cta:hover{
+    background:var(--brand-dark);
+}
+
+/* map embed */
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:100%;
+    max-width:600px;
+    height:auto;
+    margin:0 auto;
+}
+.gmap_canvas{
+    overflow:hidden;
+    background:none !important;
+    width:100%;
+    height:0;
+    padding-bottom:66.66%; /* 3:2 ratio */
+}
+.gmap_iframe{
+    position:absolute;
+    left:0;top:0;
+    width:100% !important;
+    height:100% !important;
+}
+
+html{scroll-behavior:smooth;}
+
+/* === UI Revamp Additions 2025 === */
+body{
+  font-family:'Poppins', Helvetica, sans-serif;
+  color:#333;
+  line-height:1.6;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:14px 1rem;
+}
+nav a{
+  float:none;
+  font-weight:600;
+  transition:color .3s;
+}
+nav a:hover{
+  color:var(--brand-main);
+}
+
+.serv, .prod{
+  gap:24px;
+  flex-wrap:wrap;
+}
+
+.about{
+  position:relative;
+  width:300px;
+}
+
+.img2{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  filter:grayscale(40%);
+  transition:filter .3s, transform .3s;
+  border-radius:8px;
+}
+
+.img2:hover{
+  filter:none;
+  transform:scale(1.03);
+}
+
+.centered{
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:rgba(0,0,0,.55);
+  border-radius:4px;
+}
+
+@media(max-width:768px){
+  .welcome-content{padding-left:20px;}
+  .first{font-size:22px;}
+  .second{font-size:36px;}
+  .site-identity h1{font-size:32px;}
+  nav{gap:20px; font-size:14px;}
+  .about{width:100%;}
+}
